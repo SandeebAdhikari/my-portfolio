@@ -3,7 +3,7 @@ import HeroImg from '../../assets/about-pic.png'
 import ExperienceImg from '../../assets/experience.png'
 import EducationImg from '../../assets/education.png'
 import ArrowImg from '../../assets/arrow.png'
-import logoImg from '../../assets/logo.png'
+//import logoImg from '../../assets/logo.png'
 import './About.css';
 
 const About = () => {
