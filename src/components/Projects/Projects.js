@@ -33,7 +33,7 @@ const Projects = () => (
             <div className="article-container">
               <img src={Project3Img} alt="Convenience" className="project-img" />
             </div>
-            <h2 className="experience-sub-title project-title">Convenience</h2>
+            <h2 className="experience-sub-title project-title">Django Scheduler Web Application </h2>
             <div className="btn-container">
               <button className="btn btn-color-2 project-btn" onClick={() => window.location.href = 'https://github.com/SandeebAdhikari/Post_blog_Django_Project'}>GitHub</button>
               <button className="btn btn-color-2 project-btn" onClick={() => window.location.href = 'https://post-blog-django-project-git-main-sandeebs-projects.vercel.app/'}>Live Demo</button>
