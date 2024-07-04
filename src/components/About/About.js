@@ -29,7 +29,7 @@ const About = () => {
           </div>
         </div>
         <div className="text-container">
-          <p>I'm a computer science student at NJIT. I'm deeply passionate about coding and innovation, striving to make my mark in the world of technology, one algorithm at a time.</p>
+          <p>I'm a computer science student at NJIT. I'm deeply passionate about coding and innovation, striving to make my mark in the world of technology.</p>
         </div>
       </div>
     </div>

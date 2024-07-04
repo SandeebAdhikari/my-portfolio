@@ -1,0 +1,40 @@
+/* Ensure the gallery is flex and centers the content */
+.gallery {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:1.5rem;
+}
+
+/* Card styles */
+.card {
+    background: white;
+    border-radius: 2rem;
+    border-color: rgb(163, 163, 163);
+    overflow: hidden;
+    transition: transform 0.4s ease-in-out;
+    flex: 1 1 260px;
+    width: auto;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card.dark-mode {
+    background-color: #1f1f1f;
+    border-color: #bb86fc;
+}
+
+
+
+
+
+
+

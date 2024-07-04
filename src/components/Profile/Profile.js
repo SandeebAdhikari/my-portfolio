@@ -14,7 +14,7 @@ const Profile = () => (
     <div className="section_text">
       <p className="section_text_P1">Hello, I'm</p>
       <h1 className="name">Sandeeb Adhikari</h1>
-      <p className="section_text_P2">Software Engineer (currently studying at NJIT)</p>
+      <p className="section_text_P2">Software Engineer (currently final year Student at NJIT)</p>
       <div className="btn-container">
         <button className="btn btn-color-2" onClick={() => window.open(ResumePDF)}>Resume</button>
         <button className="btn btn-color-1" onClick={() => window.location.href = './#contact'}>Contact Info</button>

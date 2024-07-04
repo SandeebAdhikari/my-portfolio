@@ -40,6 +40,9 @@
     .about-containers {
         margin-top: 0;
     }
+    .gallery {
+        flex-direction: row-reverse;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -58,8 +61,20 @@
         margin-bottom: 2rem;
     }
     .about-containers,
-    .contact-info-upper-container, .btn-container {
+    .contact-info-upper-container, .btn-container{
         flex-wrap: wrap;
+    }
+
+    .gallery {
+        gap: 10px;
+    }
+
+    .project-title {
+        font-size: 1.2rem;
+    }
+
+    .project-btn {
+        padding: 8px 16px;
     }
 
     .contact-info-container {
@@ -102,3 +117,4 @@
         text-align: justify;
     }
 }
+
