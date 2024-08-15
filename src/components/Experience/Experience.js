@@ -1,16 +1,16 @@
 import React from 'react';
-import CheckmarkImg from '../../assets/checkmark.png'
-import ArrowImg from '../../assets/arrow.png'
+import CheckmarkImg from '../../assets/checkmark.png';
+import ArrowImg from '../../assets/arrow.png';
 import './Experience.css';
 
-const Experience = () => (
-  <section id="experience">
+const Experience = ({ darkMode }) => (
+  <section id="experience" className={darkMode ? 'dark-mode' : ''}>
     <p className="section_text_P1">Explore My</p>
     <h1 className="name">Experience</h1>
-    <div className="experience-details-container">
+    <div className={`experience-details-container ${darkMode ? 'dark-mode' : ''}`}>
       <div className="about-containers">
-        <div className="details">
-          <h2 className="experience-sub-title">Frontend Development</h2>
+        <div className={`details ${darkMode ? 'dark-mode' : ''}`}>
+          <h2 className={`experience-sub-title${darkMode ? 'dark-mode' : ''}`}>Frontend Development</h2>
           <div className="article-container">
             <article>
               <img src={CheckmarkImg} alt="Experience icon" className="icon" />
@@ -42,8 +42,8 @@ const Experience = () => (
             </article>
           </div>
         </div>
-        <div className="details">
-          <h2 className="experience-sub-title">Backend Development</h2>
+        <div className={`details ${darkMode ? 'dark-mode' : ''}`}>
+          <h2 className={`experience-sub-title${darkMode ? 'dark-mode' : ''}`}>Backend Development</h2>
           <div className="article-container">
             <article>
               <img src={CheckmarkImg} alt="Experience icon" className="icon" />

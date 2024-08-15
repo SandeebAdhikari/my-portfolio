@@ -1,8 +1,25 @@
-footer {
+#webpage-footer {
     height: 26vh;
     margin: 0 1rem;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 footer p {
     text-align: center;
+    color: black;
+    transition: color 0.3s;
+}
+
+#webpage-footer{
+    display: none;
+}
+.dark-mode #webpage-footer {
+    background-color: #121212 !important;
+    color: #ffffff !important;
+}
+
+footer.dark-mode p {
+    color: #ffffff !important;
 }

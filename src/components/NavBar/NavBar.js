@@ -2,8 +2,8 @@ import React from 'react';
 import './NavBar.css';
 import logoImg from '../../assets/logo.png';
 
-const NavBar = () => (
-  <nav id="webpage-nav">
+const NavBar = ({ darkMode }) => (
+  <nav id="webpage-nav" className={darkMode ? 'dark-mode' : ''}>
     <div className="logo-container">
       <img src={logoImg} alt="SA logo" className="logo-pic" />
       <div className="logo-text">Sandeeb Adhikari</div>

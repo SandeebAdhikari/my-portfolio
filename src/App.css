@@ -14,8 +14,8 @@ body {
 }
 
 body.dark-mode {
-    background-color: #121212; /* Dark mode background color */
-    color: #e0e0e0; /* Dark mode text color */
+    background-color: #121212;
+    color: #ffffff;
 }
 
 html {
@@ -48,10 +48,7 @@ nav {
     color: black;
 }
 
-nav.dark-mode {
-    background-color: #1f1f1f;
-    color: #e0e0e0;
-}
+
 
 .nav_links {
     gap: 2rem;
@@ -286,6 +283,7 @@ section {
 }
 
 
+
 .about-details {
     justify-content: center;
     flex-direction: column;
@@ -323,12 +321,6 @@ section {
 .details:hover {
     transform: scale(1.05);
 }
-.details.dark-mode {
-    background: #1f1f1f;
-    border-color: #bb86fc;
-}
-
-
 
 .section-container {
     display: flex;
@@ -354,7 +346,7 @@ section {
 }
 
 .experience-sub-title.dark-mode {
-    color: #e0e0e0;
+    color: #ffffff;
 }
 
 .experience-details-container {
@@ -402,15 +394,18 @@ article .icon {
     border-radius: 2rem;
     width: 90%;
     height: 90%;
+    
 }
-
+.project-img.dark-mode{
+    border-color: #bb86fc;
+}
 .project-title {
     margin: 1rem;
     color: black;
 }
 
 .project-title.dark-mode {
-    color: #bb86fc;
+    color: #ffffff;
 }
 
 .project-btn {
@@ -419,8 +414,8 @@ article .icon {
 }
 
 .project-btn.dark-mode {
-    color: #bb86fc;
-    border-color: #bb86fc;
+    color: #ffffff;
+    border-color: none;
 }
 
 #contact {
@@ -472,15 +467,7 @@ article .icon {
     height: 2.5rem;
 }
 
-footer {
-    height: 26vh;
-    margin: 0 1rem;
-}
 
-footer p {
-    text-align: center;
-}
 
-footer p.dark-mode {
-    color: #e0e0e0;
-}
+
+

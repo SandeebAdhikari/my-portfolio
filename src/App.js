@@ -8,7 +8,6 @@ import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import SplashScreen from './components/SplashScreen/SplashScreen';
 import ThemeToggle from './components/ThemeToggle/ThemeToggle';
-import { createTheme, ThemeProvider, CssBaseline } from '@mui/material';
 import './App.css';
 import './mediaqueries.css';
 
@@ -25,40 +24,24 @@ function App() {
     document.body.classList.toggle('dark-mode');
   };
 
-  const darkTheme = createTheme({
-    palette: {
-      mode: 'dark',
-    },
-  });
-
-  const lightTheme = createTheme({
-    palette: {
-      mode: 'light',
-    },
-  });
-
   return (
-    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
-      <CssBaseline />
-      <div className="App">
-        {showSplashScreen ? (
-          <SplashScreen onEnd={handleSplashEnd} />
-        ) : (
-          <>
-            <ThemeToggle darkMode={darkMode} handleThemeChange={handleThemeChange} />
-            <NavBar />
-            <Profile />
-            <About />
-            <Experience />
-            <Project />
-            <Contact />
-            <Footer />
-          </>
-        )}
-      </div>
-    </ThemeProvider>
+    <div className={`App ${darkMode ? 'dark-mode' : ''}`}>
+      {showSplashScreen ? (
+        <SplashScreen onEnd={handleSplashEnd} />
+      ) : (
+        <>
+          <ThemeToggle darkMode={darkMode} handleThemeChange={handleThemeChange} />
+          <NavBar />
+          <Profile darkMode={darkMode} />
+          <About darkMode={darkMode} />
+          <Experience darkMode={darkMode} />
+          <Project darkMode={darkMode} />
+          <Contact darkMode={darkMode} />
+          <Footer darkMode={darkMode} />
+        </>
+      )}
+    </div>
   );
 }
 
 export default App;
-

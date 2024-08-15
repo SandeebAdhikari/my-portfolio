@@ -1,8 +1,8 @@
 import React from 'react';
 import './Footer.css';
 
-const Footer = () => (
-  <footer>
+const Footer = ({darkMode}) => (
+  <footer className={darkMode ? 'dark-mode' : ''}>
     <nav>
       <div className="nav-links-container">
         <ul className="nav_links">
